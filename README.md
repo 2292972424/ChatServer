@@ -28,7 +28,14 @@ thirdparty:第三方库，主要是json.hpp;
 
 # 功能演示：
 
+## 连接服务器和登录客户端
+
 <img width="732" height="809" alt="image" src="https://github.com/user-attachments/assets/98248ea8-f3e1-4a5b-8314-d32986b480ea" />
 
 <img width="1139" height="775" alt="image" src="https://github.com/user-attachments/assets/22e6e913-6e2d-46f8-b3ca-4db972ba162d" />
+
+## 跨服务器聊天
+
+<img width="1139" height="775" alt="image" src="https://github.com/user-attachments/assets/5fd1388e-48ab-4a9b-ac6a-d01a54856a94" />
+
 

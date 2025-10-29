@@ -18,6 +18,10 @@ thirdparty:第三方库，主要是json.hpp;
 # 编译方式
 下载源码后，执行./build.sh即可
 
+或者进入build文件夹
+
+执行cmake .. make
+
 # 自动生成mysql表结构
 执行./chat.sql即可
 

@@ -2,17 +2,49 @@
 可以工作在nginx tcp负载均衡中的集群聊天服务器和客户端源码 基于muduo库 redis json mysql
 
 # 代码结构
-bin:可执行文件;
+ChatServer/
 
-build:编译产生的文件;
+├── src/
 
-include:头文件;
+│   ├── server/           # 服务器端代码
 
-src:源代码;
+│   │   ├── chatserver.cpp    # 服务器主类
 
-test:项目初期的测试代码;
+│   │   ├── chatservice.cpp   # 业务逻辑处理
 
-thirdparty:第三方库，主要是json.hpp;
+│   │   └── main.cpp          # 程序入口
+
+│   ├── client/           # 客户端代码
+
+│   └── public/           # 公共定义
+
+├── model/                # 数据模型
+
+│   ├── usermodel.cpp     # 用户数据操作
+
+│   ├── friendmodel.cpp   # 好友关系操作
+
+│   ├── groupmodel.cpp    # 群组数据操作
+
+│   └── offlinemessagemodel.cpp  # 离线消息处理
+
+├── db/                   # 数据库层
+
+│   ├── db.cpp           # 数据库连接封装
+
+│   └── dbconnection.cpp # 连接池管理
+
+├── redis/               # Redis 客户端
+
+│   └── redis.cpp        # Redis 操作封装
+
+├── thirdparty/          # 第三方库
+
+├── bin/                 # 编译输出
+
+├── build/               # 构建目录
+
+└── conf/                # 配置文件
 
 
 # 编译方式

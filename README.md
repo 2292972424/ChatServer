@@ -8,7 +8,7 @@
 执行./chat.sql即可
 
 
-功能演示：
+# 功能演示：
 
 <img width="732" height="809" alt="image" src="https://github.com/user-attachments/assets/98248ea8-f3e1-4a5b-8314-d32986b480ea" />
 

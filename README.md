@@ -3,11 +3,17 @@
 
 # 代码结构
 bin:可执行文件;
+
 build:编译产生的文件;
+
 include:头文件;
+
 src:源代码;
+
 test:项目初期的测试代码;
+
 thirdparty:第三方库，主要是json.hpp;
+
 
 # 编译方式
 下载源码后，执行./build.sh即可

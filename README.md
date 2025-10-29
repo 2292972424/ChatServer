@@ -6,3 +6,6 @@
 
 #自动生成mysql表结构
 执行./chat.sql即可
+
+<img width="1139" height="775" alt="image" src="https://github.com/user-attachments/assets/22e6e913-6e2d-46f8-b3ca-4db972ba162d" />
+

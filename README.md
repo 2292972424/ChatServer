@@ -7,5 +7,9 @@
 #自动生成mysql表结构
 执行./chat.sql即可
 
+
+功能演示：
+<img width="732" height="809" alt="image" src="https://github.com/user-attachments/assets/98248ea8-f3e1-4a5b-8314-d32986b480ea" />
+
 <img width="1139" height="775" alt="image" src="https://github.com/user-attachments/assets/22e6e913-6e2d-46f8-b3ca-4db972ba162d" />
 

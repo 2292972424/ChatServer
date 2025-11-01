@@ -1,5 +1,5 @@
 # ChatSever
-可以工作在nginx tcp负载均衡中的集群聊天服务器和客户端源码 基于muduo库 redis json mysql
+一个可以工作在nginx TCP负载均衡中的集群聊天服务器和客户端源码，基于muduo网络库、Redis、JSON和MySQL技术栈实现。
 
 # 运行环境
 Linux Ubuntu 24.04
@@ -19,14 +19,12 @@ Linux Ubuntu 24.04
 
 nginx.conf文件:
 
+```
 #nginx tcp loadbalance config
 
 stream {
-
     upstream MyServer {
-    
         server 127.0.0.1:6000 weight=1 max_fails=3 fail_timeout=30s;
-        
         server 127.0.0.1:6002 weight=1 max_fails=3 fail_timeout=30s;
         
     }
@@ -39,6 +37,7 @@ stream {
         tcp_nodelay on;
     }
 }
+```
 
 6.cmake:在ubuntu上直接执行apt install cmake即可,vs上也要安装cmake方便编译。
 
@@ -63,50 +62,31 @@ stream {
 <img width="918" height="100" alt="image" src="https://github.com/user-attachments/assets/57d6f0fd-9577-4a17-ac2e-9c853efce90a" />
 
 # 代码结构
+
+```
 ChatServer/
-
 ├── src/
-
 │   ├── server/           # 服务器端代码
-
 │   │   ├── chatserver.cpp    # 服务器主类
-
 │   │   ├── chatservice.cpp   # 业务逻辑处理
-
 │   │   └── main.cpp          # 程序入口
-
 │   ├── client/           # 客户端代码
-
 │   └── public/           # 公共定义
-
 ├── model/                # 数据模型
-
 │   ├── usermodel.cpp     # 用户数据操作
-
 │   ├── friendmodel.cpp   # 好友关系操作
-
 │   ├── groupmodel.cpp    # 群组数据操作
-
 │   └── offlinemessagemodel.cpp  # 离线消息处理
-
 ├── db/                   # 数据库层
-
 │   ├── db.cpp           # 数据库连接封装
-
-│   └── dbconnection.cpp # 连接池管理（还未增加，后续可能会增加）
-
+│   └── dbconnection.cpp # 连接池管理（还未实现，后续可能会加）
 ├── redis/               # Redis 客户端
-
 │   └── redis.cpp        # Redis 操作封装
-
 ├── thirdparty/          # 第三方库
-
 ├── bin/                 # 编译输出
-
 ├── build/               # 构建目录
-
 └── conf/                # 配置文件
-
+```
 
 # 编译方式
 下载源码后，执行./build.sh即可

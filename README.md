@@ -93,7 +93,7 @@ ChatServer/
 
 │   ├── db.cpp           # 数据库连接封装
 
-│   └── dbconnection.cpp # 连接池管理
+│   └── dbconnection.cpp # 连接池管理（还未增加，后续可能会增加）
 
 ├── redis/               # Redis 客户端
 

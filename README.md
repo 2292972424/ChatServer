@@ -1,6 +1,16 @@
 # ChatSever
 可以工作在nginx tcp负载均衡中的集群聊天服务器和客户端源码 基于muduo库 redis json mysql
 
+# 运行环境
+Linux Ubuntu 24.04
+
+<img width="1484" height="1018" alt="image" src="https://github.com/user-attachments/assets/5fa80000-3d36-4d44-ad79-2e218fa93357" />
+
+# 环境搭建
+1.JSON：直接下载json.hpp文件即可,在源码的thirdparty文件夹中
+
+2.boost+muduo网络库:参考
+
 # 代码结构
 ChatServer/
 
